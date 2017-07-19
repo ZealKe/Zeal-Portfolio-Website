@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="animation.css">
+</head>
+<body bgcolor="black">
+  <svg width="100%" height="100%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+ <path id="path">
+<animate id="anim1"
+    attributeName="d"
+    from="m0,110 h0"
+    to="m0,110 h1100"
+    dur="1s"
+    begin="0s; anim4_2.end"
+    repeatCount="1"
+    fill="freeze"/>   
+
+    <animate id="anim1_2"
+    attributeName="d"
+    from="m0,110 h1100"
+    to="m0,110 h0"
+    dur="1s"
+    begin="anim1.end"
+    repeatCount="1"
+    fill="freeze"/>   
+    </path>
+  <text font-size="26" font-family="serif" fill='hsla(36, 95%, 85%, 1)'>
+    <textPath xlink:href="#path">&nbsp;Jambo!
+    </textPath>
+  </text>
+
+  <svg width="100%" height="100%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+ <path id="path2">
+  <animate id="anim2"
+    attributeName="d"
+    from="m0,110 h0"
+    to="m0,110 h1100"
+    dur="1.5s"
+    begin="anim1_2.end"
+    repeatCount="1"
+    fill="freeze" /> 
+
+    <animate id="anim2_2"
+    attributeName="d"
+    from="m0,110 h1100"
+    to="m0,110 h0"
+    dur="1.5s"
+    begin="anim2.end"
+    repeatCount="1"
+    fill="freeze" />
+    </path>
+  <text font-size="26" font-family="serif" fill='hsla(36, 95%, 85%, 1)'>
+    <textPath xlink:href="#path2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We are Zeal Tech.
+    </textPath>
+  </text>
+</svg>
+
+  <svg width="100%" height="100%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+ <path id="path3">
+  <animate id="anim3"
+    attributeName="d"
+    from="m0,110 h0"
+    to="m0,110 h1100"
+    dur="1.5s"
+    begin="anim2_2.end"
+    repeatCount="1"
+    fill="freeze" />
+
+    <animate id="anim3_2"
+    attributeName="d"
+    from="m0,110 h1100"
+    to="m0,110 h0"
+    dur="1.5s"
+    begin="anim3.end"
+    repeatCount="1"
+    fill="freeze" />
+  </path>
+  <text font-size="26" font-family="serif" fill='hsla(36, 95%, 85%, 1)'>
+    <textPath xlink:href="#path3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We transform your ideas into elegant solutions.
+    </textPath>
+  </text>
+  </svg>
+
+  <svg width="100%" height="100%" viewBox="30 -50 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+ <path id="path4">
+    <animate id="anim4"
+    attributeName="d"
+    from="m0,110 h0"
+    to="m0,110 h1100"
+    dur="1.5s"
+    begin="anim3_2.end"
+    repeatCount="1"
+    fill="freeze"/>
+
+    <animate id="anim4_2"
+    attributeName="d"
+    from="m0,110 h1100"
+    to="m0,110 h0"
+    dur="1.5s"
+    begin="anim4.end"
+    repeatCount="1"
+    fill="freeze"/>
+  </path>
+  <text font-size="26" font-family="serif" fill='hsla(36, 95%, 85%, 1)'>
+    <textPath xlink:href="#path4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tech for Change; Change for Tech.
+    </textPath>
+  </text>
+</svg>
+</body>
+</html>

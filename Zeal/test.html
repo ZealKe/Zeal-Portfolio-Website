@@ -1,0 +1,301 @@
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+
+<div class="laptop">
+  <div class="laptop_a laptop_def">
+    <div class="front">
+          <section style="width: 400px; height: 225px; border: 0.2px grey;font-family: 'Source Sans Pro', sans-serif; font-weight: 100;color:#7CFC00;background: black;">
+            <p class="header" style="
+    margin: 0;
+    text-align: center;
+    font-size: 2em;
+">Zeal Tech</p>
+            <span id="type-it"></span>
+          </section>                                               
+    </div>
+    <div class="back">
+    </div>
+    <div class="top"></div>
+  </div>
+  <div class="bottom"></div>
+</div>
+<script type="text/javascript">
+//   $('.type-it').typeIt({
+//      strings: ['This is my string!']
+// });
+// call .typeIt() on my element and set global options
+$('#type-it').typeIt({
+     speed: 100,
+     // lifeLike: true,
+     autoStart: false,
+     strings:'$ '
+     // callback(): function() {
+     //       $('#typeit-box-code-link').addClass('is-visible');
+     // }
+})
+.tiPause(1200)
+.tiType('Jambo! ✋')
+
+.tiBreak()
+.tiType('$ ')
+.tiPause(500)
+// .tiType('A jQuery pl')
+// .tiPause(500)
+// .tiDelete(12)
+// .tiBreak()
+// .tiPause(500)
+.tiType('We are <strong>Zeal Corp</strong>')
+.tiPause(500)
+.tiDelete(4)
+.tiType('Tech.')
+
+// .tiDelete(11)
+// .tiPause(350)
+// .tiType('on the ')
+// .tiPause(600)
+// .tiType('<em>planet.</em>');
+.tiBreak()
+.tiType('$ ')
+.tiPause(500)
+.tiType('We transform your ideas into elegant solutions.')
+.tiSettings({speed: 700})
+.tiType('...')
+
+.tiBreak()
+.tiSettings({speed: 100})
+.tiType('$ ')
+.tiPause(500)
+.tiType('Tech for Change; Change for Tech. ✌')
+</script>
+<style type="text/css">
+  html, body {
+  background: #fff;
+  height: 100%;
+  overflow: hidden;
+  min-width: 540px;
+  min-height: 400px;
+}
+
+.laptop {
+  -webkit-perspective: 1800px;
+  -moz-perspective: 1800px;
+  perspective: 1800px;
+  position: relative;
+  top: 50%;
+  margin: 0 auto;
+  margin-top: -134px;
+  width: 425px;
+}
+
+.laptop_a {
+  position: absolute;
+  width: 100%;
+  height: 269px;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  transform: rotateX(-81deg);
+  -moz-transform: rotateX(-81deg);
+  -webkit-transform: rotateX(-79deg);
+  -webkit-transition: -webkit-transform .20s;
+  -moz-transition: -moz-transform .20s;
+  transition: transform .20s;
+  /*animation: spin 1.5s linear;
+  -webkit-animation: spin 1.5s ease-in;
+  -moz-animation: spin 1.5s linear;
+  -o-animation: spin 1.5s linear;*/
+  animation-fill-mode: forwards;
+  transform-origin: 100% 100%;
+}
+
+.laptop_a > div,
+.front > div {
+  display: inline-block;
+  position: absolute;
+}
+
+.front {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transition: -webkit-transform .20s;
+  -moz-transition: -moz-transform .20s;
+  transition: transform .20s;
+  -webkit-transform: translate3d(0,0,1px);
+  -moz-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
+  z-index: 10;
+  -webkit-animation: bg_n 1.5s ease-in;
+  -moz-animation: bg_n 1.5s ease-in;
+  -animation: bg_n 1.5s ease-in;
+  animation-fill-mode: forwards
+}
+
+
+.front > div {
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  top: 0;
+  left: 0;
+  background: #ccc;
+}
+
+.front, .back, .front  {
+  width: 400px;
+  border: 2px solid #777;
+  border-radius: 1em;
+  padding: 1em;
+
+}
+.front iframe { 
+  width: 100%; 
+  -webkit-animation: opc 2.0s ease-in;
+  -moz-animation: opc 2.0s ease-in;
+  animation: opc 2.0s ease-in;
+  animation-fill-mode: forwards;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.top {
+  width: 434px;
+  height: 2px;
+  top: 11px;
+}
+
+.back {
+  -webkit-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,1px);
+  -moz-transform: rotate3d(0,1,0,-180deg) translate3d(0,0,1px);
+  transform: rotate3d(0,1,0,-180deg) translate3d(0,0,1px);
+}
+
+
+
+.top {
+  -webkit-transform: rotate3d(1,0,0,90deg);
+  -moz-transform: rotate3d(1,0,0,90deg);
+  transform: rotate3d(1,0,0,90deg);
+}
+
+
+.back {
+  z-index: 1;
+}
+
+.front {
+  background-color: #fff;
+}
+.back {
+  background-color: #999;
+}
+.top {
+  background-color: #999;
+}
+
+.viewback {
+  -webkit-transform-origin: center center;
+  -webkit-transform: rotate3d(0,1,0,180deg) translate3d(0,0,0px);
+  -moz-transform: rotate3d(0,1,0,180deg) translate3d(0,0,0px);
+  transform: rotate3d(0,1,0,180deg) translate3d(0,0,0px);
+}
+
+.bottom {
+  background: #fff;
+  border: 2px solid #777;
+  border-radius: 0 0 1em 1em;
+  content: " ";
+  display: block;
+  position: absolute;
+  padding: 0.3em;
+  left: -32px;
+  top: 257px;
+  z-index: 100;
+  width: 486px;
+  box-shadow: 0 3px 4px #DFDFDF;
+}
+
+.bottom:before {
+background: #777;
+  border-radius: 0 0 0.3em 0.3em;
+  content: " ";
+  display: block;
+  position: absolute;
+  padding: 0.15em 2.45em;
+  left: 43%;
+  /* bottom: 0; */
+  z-index: 101;
+  top: 0px;
+}
+
+/* ANIM */
+
+@keyframes spin {
+  from {
+    transform: rotateX(-81deg);}
+  to {
+    transform: rotateX(0deg);}
+}
+
+@-webkit-keyframes spin {
+  from {-webkit-transform: rotateX(-79deg);}
+  to {-webkit-transform: rotateX(0deg);}
+}
+
+@-moz-keyframes spin {
+  from {-moz-transform: rotateX(-81deg);
+  }
+  to {-moz-transform: rotateX(0deg);}
+}
+
+@-ms-keyframes spin {
+  from {-o-transform: rotateX(-81deg);}
+  to {-o-transform: rotateX(0deg);}
+}
+
+@-webkit-keyframes bg_n {
+  from {background-color: #ccc;}
+  to {background-color: #fff;}
+}
+
+@-moz-keyframes bg_n {
+  from {background-color: #ccc;}
+  to {background-color: #fff;}
+}
+
+@keyframes bg_n {
+  from {background-color: #ccc;}
+  to {background-color: #fff;}
+}
+
+@keyframes opc {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0;}
+    85%  {opacity: 0;}
+    100% {topacity: 1;}
+}
+
+@-moz-keyframes opc {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0;}
+    85%  {opacity: 0;}
+    100% {topacity: 1;}
+}
+
+@-webkit-keyframes opc {
+    0%   {opacity: 0;}
+    25%  {opacity: 0;}
+    50%  {opacity: 0;}
+    85%  {opacity: 0;}
+    100% {topacity: 1;}
+}
+</style>
